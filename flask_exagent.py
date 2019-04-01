@@ -1,11 +1,14 @@
 from flask import current_app, _app_ctx_stack
+import agent
 
 def flask_exagent_before_req():
     print("Before!")
+    agent.request()
     return None
 
-def flask_exagent_after_req(res):
+def flask_exagent_after_req(resp):
     print("After!")
+    agent.response()
     return resp
 
 class FlaskExagent(object):
