@@ -40,6 +40,9 @@ class FlaskExagent(object):
     def teardown(self, exception):
         ctx = _app_ctx_stack.top
 
+    def set_output_filename(self, filename):
+        agent.set_config(filename)
+
     @property
     def connection(self):
         ctx = _app_ctx_stack.top
