@@ -1,5 +1,5 @@
 """
-Flask-Agent
+Flask-Exagent
 -------------
 
 BSD 2-Clause License
@@ -30,7 +30,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 """
 from setuptools import setup
-
 
 setup(
     name='Flask-Exagent',
