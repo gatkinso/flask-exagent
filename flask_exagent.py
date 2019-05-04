@@ -50,7 +50,7 @@ def flask_exagent_before_req():
     return None
 
 def flask_exagent_after_req(resp):
-    resp_json = r = json.dumps(resp.json)
+    resp_json = json.dumps(resp.json)
     agent.response(resp_json, "id")
     return resp
 
